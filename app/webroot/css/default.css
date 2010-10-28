@@ -1,0 +1,195 @@
+body { background-color:#ccc; margin:0px; font-size:65%;}
+html { background-color:#ccc; margin:0px; padding:0px; }
+
+#doc3 { margin:5px; border: 1px solid #999; padding:0px; font-size:11px; }
+
+#hd { background-color:#fff; background:transparent url("../img/OFF.gif") repeat-x top left; }
+
+#bd         { margin:0px; font-size:11px; line-height:13px; background-color:#ccc; }
+#bd h2      { padding:0 0 8px 0; border-bottom: 3px double #ccc; margin:15px 0 30px 0 ;}
+#bd h2 span { font-size:12px; color:#153A6F; font-weight:bold; }
+#bd a       { color:#900; }
+
+#mainContent { background-color:#fff; margin:10px 10px 10px 30px; padding:10px; min-height:400px; border: 1px solid #D0DDE6; }
+
+#bodyContent { margin:0px; }
+#bodyContent div.announcements ul { margin: 30px 5px;}
+#bodyContent div.announcements li { list-style-type: circle; margin-left: 40px; }
+#pageMenu { height:20px; background-color:#ccccff; border:1px solid #D0DDE6; border-top:none; }
+
+#tabsbd { margin:3px; min-height:600px; }
+
+#ft { display:none; border:none; height:33px; line-height:33px; padding:5px; margin:0px; clear:both; }
+
+#account { border:none; height:20px; line-height:20px; padding:5px 10px 5px 5px; display:block; text-align:right; }
+#account h1 span { font-weight:bold;  }
+
+#banner          { padding:5px; height:75px; color:#153A6F; background-image: url('../img/grid_bg.png'); }
+#banner #logo    { padding: 0 0 30px 100px; background:url('../img/ftepLogo.png') no-repeat 30px -14px ;}
+#banner #logo h1 { padding: 0 0 0 30px; color:#153A6F; font-size:30px; margin:0px; }
+#banner #logo h2 { padding: 0 0 0 30px; color:#153A6F; font-size:10px; margin:0px; text-transform:uppercase; background-color:transparent; }
+ 
+#nav { background-color:#fff; margin:10px 10px 10px 10px; padding:10px; min-height:590px; border: 1px solid #D0DDE6;}
+
+div.yui-t2 {background-color:#f9f9f9}
+
+div.actions { margin:20px 0  0 35px; border:1px solid #ccc; padding:8px; min-height:500px; background-color:#f9f9f9}
+
+div.actions ul { margin:2px 0 15px 0; }
+
+/* Tabs */
+
+.pg_tab { margin:2px; }
+
+#tabsbd li.pageHeader { text-transform:uppercase; background-color:#fff; }
+
+#pagebd { background-color:#fff;}
+
+/*-------------------------------------------------------
+ BUTTONS  & SIDE ACTIONS
+-------------------------------------------------------*/
+
+div.actions h3 { letter-spacing:.1em; color:#153A6F; font-size:13px; font-weight:bold; text-transform:uppercase; margin:0 0 15px 0; border-bottom:3px double #153A6F; }
+
+div.actions .ui-button { width:160px; padding:0px; margin:0px; }
+
+.ui-button { padding:0px; }
+
+.ui-button-text-only .ui-button-text { color: #153A6F; margin:0 0 0 5px; font-size:11px; text-align:left;}
+
+.ui-button-text       { color:#153A6F; font-size:11px; text-align:left; }
+.ui-button-text:hover { color: #900 }
+
+.submit input[type=submit] { font-size: .8em; padding:4px} 
+
+.tableView dt { font-weight:normal; width:90%; font-size:11px; }
+.tableView dd { margin-left: 90%; padding:2px; font-size:11px; }
+
+dl { font-size:11px; }
+
+/*-------------------------------------------------------
+ NAVIGATION 
+-------------------------------------------------------*/
+
+#navAdmin { margin:0 0 15px 0; border-bottom: 1px solid #ccc; background-color:#ccc;}
+
+li.pageheader { background-image:none; background-color:#fff;}
+
+#menu li { color:#fff; line-height:.9em; margin:auto;}
+
+/*-------------------------------------------------------
+ MESSAGES 
+-------------------------------------------------------*/
+
+.ui-state-error { margin:10px; width:400px; padding:10px; font-weight:bold;}
+
+.blueFlash { display:none; position:fixed; top:0px; right:0px; margin:0px; padding:20px; font-size:120%; color:#fff; width:100%; font-weight:bold; background-color:#153A71; text-align:center;}
+
+/*-------------------------------------------------------
+ TABLES 
+-------------------------------------------------------*/
+
+th         { padding:4px; background:transparent url("../img/OFF.gif") repeat-x top left;}
+th a       { padding:1px 2px; text-decoration:underline; font-weight:600; }
+th a:hover { padding:1px 2px; text-decoration:none; margin:0px;}
+
+table { border: 1px solid #ccc; border-top:none; font-size:11px; }
+
+.center {padding-left:50%; }
+
+#announceTable     { border: none; background-color: #fff; font-size:11px; }
+#annoucneTable td  { margin:15px 0 0 0; line-height:2em; }
+#announceTable tr:nth-child(odd)  td { background: #f5f5f5; }
+#announceTable tr:nth-child(even) td { background: #fff; }
+#announceTable h3 { margin:0px; color:#153A6F; font-size:15px; font-weight:bold;}
+#announceTable h5 { color:#153A6F; font-weight:bold;}
+
+dl { border:1px solid #dddddd; padding:5px;}
+
+#textclear dt { clear:both; display:block; width:100%; }
+#textclear dd { display:block; margin:0px; }
+
+.employees strong { font-weight:bold; color:#153A6F; }
+
+/*---------------------------------------
+ FORMS 
+-----------------------------------------*/
+input { color:#153A6F; line-height:1em; padding:2px;}
+
+textarea, select { color:#153A6F; }
+
+input.smalltext { width: 10px; }
+
+.altDiv { background: #f4f4f4; }
+
+label, dt { color:#153A6F; }
+
+div.related { margin:5px 10px;}
+
+input[type=text] { margin-right:5px;}
+
+/*input[type=radio].hradio {float:right;} */
+
+div#observation           { border: 1px solid #ccc; }
+div#observation div       { border: 1px solid #ccc; margin:0px; padding:10px;}
+div#observation label     { float:left; margin:0 15px 0 15px; width:320px;}
+
+div.instructions    { height:2.2em; border:1px solid #ccc; background-color:#f4f4f4; margin:0 0 10px 0; }
+div.instructions h2 { height:2.3em; border:1px solid #ccc; background-color:#fff; font-weight:bold; color:#153A6F; font-size: 1.1em; padding:4px; }
+
+/*-------------------------------------------------------
+ JHtmlArea 
+ -------------------------------------------------------*/
+ 
+textarea.DefaultHtmlArea { height: 200px }
+
+div.jHtmlArea .ToolBar ul li a.custom_disk_button 
+        {
+            background: url(../img/disk.png) no-repeat;
+            background-position: 0 0;
+        }
+        
+div.jHtmlArea { border: solid 1px #ccc; }
+
+div.toolbar { margin: 0 auto 0 auto }
+
+/*-------------------------------------------------------
+ Sprite 
+ -------------------------------------------------------*/
+.ss_sprite { height:13px; padding-bottom:2px;}
+
+/*-------------------------------------------------------
+ Tool Tips 
+ -------------------------------------------------------*/
+/*#observation img {  margin:-100px 0 0 0; }*/
+#observation div.helpimg { border:none; padding:0px; width:5px; position:relative; top:30px; left:3px; z-index:10;margin:5 20px 0 0;}
+#observation label { margin-bottom:5px; font-size:11px; }
+.tooltip {
+	background-color:#000;
+	border:1px solid #fff;
+	padding:10px 15px;
+	width:200px;
+	display:none;
+	color:#fff;
+	text-align:left;
+	font-size:12px;
+
+	/* outline radius for mozilla/firefox only */
+	-moz-box-shadow:0 0 10px #000;
+	-webkit-box-shadow:0 0 10px #000;
+}
+#observation div.helpimg span { background-color:#000; font-size:14px; border-bottom:2px solid #fff;}
+#observation .input select { }
+
+/*-------------------------------------------------------
+ Profile Box
+ -------------------------------------------------------*/
+ #profileInfo    { margin:5px 5px 15px 5px; background-color:#f5f5f5; border:1px solid #153A6F;}
+ #profileInfo h3 { padding:5px; border-bottom:1px solid #153A6F; background-color:#153A6F; color:#fff; font-size:12px; text-transform:none;}
+ #profileInfo ul { padding:5px; }
+ #profileInfo li:nth-child(1)  { font-weight:bold; margin:0px; color:#153A6F;}
+ #profileInfo li               { margin:0px; color:#153A6F;}
+/*-------------------------------------------------------
+ MISC
+ -------------------------------------------------------*/
+.hideDiv { display:none; }

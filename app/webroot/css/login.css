@@ -1,0 +1,49 @@
+body { background-color:#E6E9EE; margin:0px;}
+html { background-color:#E6E9EE;}
+
+#loginContainer { background-color:#153A6F;width:635px; margin:100px auto; border:1px solid #999; clear:both;
+	text-align:left;
+	-moz-box-shadow:3px 3px 3px #ccc;
+	-webkit-box-shadow:3px 3px 3px #ccc;
+	box-shadow:3px 3px 3px #ccc;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+#header {  
+	background-repeat:no-repeat; background-image: url('../img/ftepLogo.png'); 
+	color:#153A6F;
+	background-color:#BFC9D7; 
+	margin:0px; 
+	padding:20px 0 20px 100px;
+	border-bottom:1px solid #999;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#header h1 { font-size:2.2em; margin:0 0 0 8px; padding: 0 0 0 0; }
+#header h2 { font-size:1em; margin:-8px 0 0 8px; padding: 0 0 0 0; color:#567059; }
+#info { color:#fff; width:315px; float:left; margin:0 0 20px 0; }
+#bd {	
+	margin:0 0 20px 0;
+	padding: 20px 0 0 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#375883), to(#153A6F)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #375883,  #153A6F); /* for firefox 3.6+ */
+}
+#info p { margin:0px; padding: 0 0 0 20px; line-height:1.5em; }
+#loginBox { background-color:#BFC9D7; width:280px; height:140px; margin:0 0 10px 325px; border:1px solid #999; padding: 10px 0 0 0;}
+#loginBox input[type=text]     { display:block; margin:0 10px 10px; width:200px; font-size:1em; color:#153A6F; padding:2px 2px 2px 3px;}
+#loginBox input[type=password] { display:block; margin:0 10px 10px; width:200px; font-size:1em; color:#153A6F; padding:2px 2px 2px 3px;}
+#loginBox input[type=submit]   { margin:10px; font-size:.8em; color:#153A6F; padding:2px; width:75px;}
+#loginBox label { margin: 40px 0 0 10px; font-size:.8em; color:#567059; /*display:none;*/}
+#loginBox ul { margin:0px; }
+#loginBox a { color:#fff; }
+.clear { clear:both; }
+
+.message { position:fixed; top:0px; right:0px; margin:0 0 10px 0; padding:20px; font-size:120%; color:#fff; width:100%; font-weight:bold; background-color:#153A71; text-align:center; clear:both; }
+
+.blueFlash { position:fixed; top:0px; right:0px; margin:0px; padding:20px; font-size:120%; color:#fff; width:100%; font-weight:bold; background-color:#153A71; text-align:center;}
+

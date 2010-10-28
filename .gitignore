@@ -1,0 +1,8 @@
+/app/config
+/app/tmp
+/plugins
+/vendors
+.htaccess
+/cake
+ftepAug30.zip
+index.php

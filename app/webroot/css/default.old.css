@@ -1,0 +1,161 @@
+body { background-color:#153A6F; margin:0px;}
+html { background-color:#153A6F; margin:0px; padding:0px; }
+
+#doc3 { background:#153A6F; background: url("../img/grid_bg.png") repeat-x; margin:0px; border: 1px solid #3C618B; padding:0px; }
+
+#hd { background-color:#fff; background:transparent url("../img/OFF.gif") repeat-x top left; }
+
+#bd   { margin:0px; }
+#bd a { color:#900; }
+
+#yui-main { /* min-height:800; */}
+
+#mainContent { background-color:#fff; margin:10px 10px 10px 30px; padding:10px; min-height:400px; border: 1px solid #D0DDE6; }
+
+#bodyContent { margin:0px; }
+#bodyContent div.announcements ul { margin: 30px 5px;}
+#bodyContent div.announcements li { list-style-type: circle; margin-left: 40px; }
+#pageMenu { height:20px; background-color:#ccccff; border:1px solid #D0DDE6; border-top:none; }
+
+#tabsbd { margin:10px 10px 10px 30px; min-height:600px; }
+
+#ft { display:none; border:none; height:33px; line-height:33px; padding:5px; margin:0px; clear:both; }
+
+#account { border:none; height:20px; line-height:20px; padding:5px 10px 5px 5px; display:block; text-align:right; }
+#account h1 span { font-weight:bold;  }
+
+#banner          { padding:5px; height:75px; color:#153A6F; background-image: url('../img/grid_bg.png'); }
+#banner #logo    { padding: 0 0 30px 100px; background:url('../img/ftepLogo.png') no-repeat 30px -14px ;}
+#banner #logo h1 { padding: 0 0 0 30px; color:#153A6F; font-size:30px; margin:0px; }
+#banner #logo h2 { padding: 0 0 0 30px; color:#153A6F; font-size:10px; margin:0px; text-transform:uppercase; background-color:transparent; }
+ 
+#nav { background-color:#fff; margin:10px 10px 10px 10px; padding:10px; min-height:590px; border: 1px solid #D0DDE6;}
+
+div.actions ul { margin:2px 0 15px 0; }
+
+h2 span { font-size:.9em; color:#153A6F; }
+
+/* Tabs */
+
+.pg_tab { margin:2px; }
+
+#tabsbd li.pageHeader { text-transform:uppercase; background-color#fff; }
+
+#pagebd { background-color:#fff; }
+
+/*-------------------------------------------------------
+ BUTTONS 
+-------------------------------------------------------*/
+
+div.actions .ui-button { width:150px;}
+
+.ui-button { padding:0px; }
+
+.ui-button-text-only .ui-button-text { color: #153A6F; margin:0 0 0 5px; font-size:95%; text-align:left;}
+
+.ui-button-text       { color:#153A6F; font-size:95%; text-align:left;}
+.ui-button-text:hover { color: #900 }
+
+.submit input[type=submit] { font-size: .8em; padding:5px} 
+
+.tableView dt { font-weight:normal; width:90%; }
+.tableView dd { margin-left: 90%; padding:2px; }
+
+/*-------------------------------------------------------
+ NAVIGATION 
+-------------------------------------------------------*/
+
+#navAdmin { margin:0 0 15px 0; border-bottom: 1px solid #ccc; }
+
+li.pageheader { background-image:none; background-color:#fff;}
+
+/*-------------------------------------------------------
+ MESSAGES 
+-------------------------------------------------------*/
+
+.ui-state-error { margin:10px; width:400px; padding:10px; font-weight:bold;}
+
+.blueFlash { display:none; position:fixed; top:0px; right:0px; margin:0px; padding:20px; font-size:120%; color:#fff; width:100%; font-weight:bold; background-color:#153A71; text-align:center; }
+
+/*-------------------------------------------------------
+ TABLES 
+-------------------------------------------------------*/
+
+th         { padding:4px; background:transparent url("../img/OFF.gif") repeat-x top left;}
+th a       { padding:1px 2px; }
+th a:hover { padding: 1px 2px; background:transparent url("../img/HOVER.gif") no-repeat top right; margin:0px;}
+
+table { border: 1px solid #ccc; border-top:none;}
+
+.center {padding-left:50%; }
+
+#announceTable     { border: none; background-color: #fff; font-size:.9em; }
+#annoucneTable td { margin:15px 0 0 0; line-height:2em; }
+#announceTable tr:nth-child(odd)td { background: #f5f5f5; }
+#announceTable tr:nth-child(even) td { background: #fff; }
+#announceTable h3 { margin:0px; color:#153A6F; font-size:1.1em; font-weight:bold;}
+#announceTable h5 { color:#153A6F; font-weight:bold;}
+
+dl { border:1px solid #dddddd; padding:5px;}
+
+/*---------------------------------------
+ FORMS 
+-----------------------------------------*/
+input { color:#153A6F; line-height:1em; padding:2px;}
+
+textarea, select { color:#153A6F; }
+
+input.smalltext { width: 10px; }
+
+.altDiv { background: #f4f4f4; }
+
+label, dt { color:#153A6F; }
+
+div.related { margin:5px 10px;}
+
+input[type=text] { margin-right:5px;}
+
+/*input[type=radio].hradio {float:right;} */
+
+div#observation           { border: 1px solid #ccc; }
+div#observation div       { border: 1px solid #ccc; margin:0px; padding:10px;}
+div#observation div:hover { background-color: #ccc; font-weight:bold; }
+div#observation label     { float:left; margin-right:15px; width:300px;}
+
+div.instructions    { height:2.2em; border:1px solid #ccc; background-color:#f4f4f4; margin:0 0 10px 0; }
+div.instructions h2 { height:2.3em; border:1px solid #ccc; background-color:#fff; font-weight:bold; color:#153A6F; font-size: 1.1em; padding:4px; }
+
+/*-------------------------------------------------------
+ JHtmlArea 
+ -------------------------------------------------------*/
+ 
+textarea.DefaultHtmlArea { height: 200px }
+
+div.jHtmlArea .ToolBar ul li a.custom_disk_button 
+        {
+            background: url(../img/disk.png) no-repeat;
+            background-position: 0 0;
+        }
+        
+div.jHtmlArea { border: solid 1px #ccc; }
+
+div.toolbar { margin: 0 auto 0 auto }
+
+/*-------------------------------------------------------
+ Sprite 
+ -------------------------------------------------------*/
+.ss_sprite { height:13px; overflow:hidden; padding-bottom:2px;}
+
+/*-------------------------------------------------------
+ Tool Tips 
+ -------------------------------------------------------*/
+#observation img { float:right; margin:-35px 0 0 -100px; }
+.tooltip {
+	display:none;
+	background:transparent url("../img/tooltips/black_arrow.png");
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#fff;	
+}
