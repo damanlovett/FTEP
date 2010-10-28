@@ -35,14 +35,15 @@ class AppController extends Controller {
             }
         }
         
-        if ($this->params['controller'] == 'observations') {
-            if ($this->Auth->user('group_id') > '4') {
-                $this->Session->setFlash('You are not authorized to edit records.'); 
-                return false;
-            } else {
-                return true;
-            }
-        }
+    //
+    //    if ($this->params['controller'] == 'observations') {
+    //        if ($this->Auth->user('group_id') > '4') {
+    //            $this->Session->setFlash('You are not authorized to edit records.'); 
+    //            return false;
+    //        } else {
+    //            return true;
+    //        }
+    //    }
         
         if ($this->action == 'delete') {
             if ($this->Auth->user('group_id') < '3') {

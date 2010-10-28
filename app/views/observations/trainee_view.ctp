@@ -62,182 +62,198 @@
 			<?php echo $observation['Observation']['3']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('4t Knowledge of Divsional Standards'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('4 Knowledge of Divsional Standards'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['4t']; ?>
 			&nbsp;
 		</dd>
+
+
+<div class="hideDiv">		
+	<!-- Hide Until sure to be deleted -->
+	
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('4p Knowledge of Divisional Standards'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['4p']; ?>
-			&nbsp;
+			&DELETE;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('5t Knowledge of Cardiac Protocols'); ?></dt>
+		
+</div>		
+		
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('5 Operational Testing'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['5t']; ?>
 			&nbsp;
 		</dd>
+		
+<div class="hideDiv">		
+	<!-- Hide Until sure to be deleted -->
+	
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('5p Knowledge of Cardiac Protocols'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['5p']; ?>
-			&nbsp;
+			&DELETE;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('6t Knowledge of Trauma Protocols'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['6t']; ?>
-			&nbsp;
+			&DELETE;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('6p Knowledge of Trauma Protocols'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['6p']; ?>
-			&nbsp;
+			&DELETE;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('7t Knowledge of Medical Protocols'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['7t']; ?>
-			&nbsp;
+			&DELETE;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('7p Knowledge of Medical Protocols'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['7p']; ?>
-			&nbsp;
+			&DELETE;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('8t Knowledge of Pharmacology'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['8t']; ?>
-			&nbsp;
+			&DELETE;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('8p Knowledge of Pharmacology'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['8p']; ?>
-			&nbsp;
+			&DELETE;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('9t Knowledge of Pediatric Protocols'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['9t']; ?>
-			&nbsp;
+			&DELETE;
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('9p Punctuality / Pediatric Protocols'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['9p']; ?>
-			&nbsp;
-		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('10 Punctuality / Shift Change Procedures'); ?></dt>
+			&DELETE;
+		</dd>>
+		
+</div>		
+		
+		
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('6 Punctuality / Shift Change Procedures'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['10']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('11 Equipment Readiness'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('7 Equipment Readiness'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['11']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('12 Assessment / Decision Making'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('8 Assessment / Decision Making'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['12']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('13 BLS Skills'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('9 BLS Skills'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['13']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('14 ALS Skills'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('10 ALS Skills'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['14']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('15 Driving Skills: Non - Emergent'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('11 Driving Skills: Non - Emergent'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['15']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('16 Driving Skills: Emergent'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('12 Driving Skills: Emergent'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['16']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('17 Orientation: Response to Call / Mapping'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('13 Orientation: Response to Call / Mapping'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['17']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('18 Field Performance: Stressful Conditions'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('14 Field Performance: Stressful Conditions'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['18']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('19 Self Initiated Field Activity: Protocols/Mapping'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('15 Self Initiated Field Activity: Protocols/Mapping'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['19']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('20 Medic Safety: General'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('16 Medic Safety: General'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['20']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('21 Medic Safety: Universal Precautions'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('17 Medic Safety: Universal Precautions'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['21']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('22 Control of Scene: voice Command'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('18 Control of Scene: voice Command'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['22']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('23 Control of Scene: Physical Skill'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('19 Control of Scene: Physical Skill'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['23']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('24 Radio: Appropriate Use of Codes /Procedures'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('20 Radio: Appropriate Use of Codes /Procedures'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['24']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('25 Radio: Listens and Comprehends'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('21 Radio: Listens and Comprehends'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['25']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('26 Radio: Articulation of Transmissions'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('22 Radio: Articulation of Transmissions'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['26']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('27 Supplementary Forms'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('23 Supplementary Forms'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['27']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('28 Report Writing: ECR'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('24 Report Writing: ECR'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['28']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('29 Report Writing: Grammar / Spelling'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('25 Report Writing: Grammar / Spelling'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['29']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('30 Report Writing: Appropriate Time Used'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('26 Report Writing: Appropriate Time Used'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['30']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('31 With Patient / Citizens in General'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('27 With Patient / Citizens in General'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['31']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('32 With Department Members, Peers and Other PS'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('28 With Department Members, Peers and Other PS'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['32']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('33 With Hospital Staff'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('29 With Hospital Staff'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['33']; ?>
 			&nbsp;

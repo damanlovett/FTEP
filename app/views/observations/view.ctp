@@ -62,7 +62,7 @@
 			<?php echo $observation['Observation']['3']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('4t Knowledge of Divsional Standards'); ?></dt>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('4 Knowledge of Divsional Standards'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['4t']; ?>
 			&nbsp;

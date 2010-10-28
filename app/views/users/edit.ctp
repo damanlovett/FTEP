@@ -24,7 +24,7 @@
 	<h3><?php __('Actions'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('Delete', true), array('action' => 'delete', $this->Form->value('User.id')), array('class'=>'delete'), sprintf(__('Are you sure you want to delete # %s?', true), $this->Form->value('User.id'))); ?></li>
+		<li><?php echo $this->Html->link(__('Delete', true), array('action' => 'delete', $this->Form->value('User.id')), array('class'=>'delete'), sprintf(__('Are you sure you want to delete # %s?', true), $this->Form->value('User.name'))); ?></li>
 		<li><?php echo $this->Html->link(__('List Users', true), array('action' => 'index'),array('class'=>'list'));?></li>
 		<li><?php echo $this->Html->link(__('List Groups', true), array('controller' => 'groups', 'action' => 'index'),array('class'=>'list'));?></li>
 		<li><?php echo $this->Html->link(__('New Group', true), array('controller' => 'groups', 'action' => 'add'),array('class'=>'new'));?></li>
