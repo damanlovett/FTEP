@@ -181,3 +181,16 @@
 [04-Oct-2010 20:48:38] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/edlovett/public_html/ftep/app/views/layouts/default.ctp on line 64
 [04-Oct-2010 20:50:32] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/edlovett/public_html/ftep/app/views/layouts/default.ctp on line 65
 [04-Oct-2010 20:52:13] PHP Fatal error:  Call to a member function writeBuffer() on a non-object in /home/edlovett/public_html/ftep/app/views/layouts/default.ctp on line 64
+[07-Oct-2010 13:41:17] PHP Parse error:  syntax error, unexpected ';', expecting T_FUNCTION in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 223
+[07-Oct-2010 13:42:11] PHP Parse error:  syntax error, unexpected ';', expecting T_FUNCTION in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 223
+[07-Oct-2010 13:42:32] PHP Parse error:  syntax error, unexpected ';', expecting T_FUNCTION in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 223
+[07-Oct-2010 13:43:21] PHP Parse error:  syntax error, unexpected ';', expecting T_FUNCTION in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 223
+[07-Oct-2010 13:45:22] PHP Parse error:  syntax error, unexpected ';', expecting T_FUNCTION in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 223
+[07-Oct-2010 13:46:32] PHP Parse error:  syntax error, unexpected ';', expecting T_FUNCTION in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 223
+[07-Oct-2010 13:49:09] PHP Parse error:  syntax error, unexpected ';', expecting T_FUNCTION in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 223
+[07-Oct-2010 13:50:39] PHP Parse error:  syntax error, unexpected ';', expecting T_FUNCTION in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 223
+[23-Oct-2010 18:41:03] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 23
+[25-Oct-2010 10:52:14] PHP Parse error:  syntax error, unexpected ')' in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 29
+[25-Oct-2010 10:57:02] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 34
+[26-Oct-2010 09:18:40] PHP Parse error:  syntax error, unexpected ';' in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 34
+[26-Oct-2010 09:24:56] PHP Parse error:  syntax error, unexpected ';' in /home/edlovett/public_html/ftep/app/controllers/observations_controller.php on line 34

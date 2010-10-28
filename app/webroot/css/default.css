@@ -193,3 +193,10 @@ div.toolbar { margin: 0 auto 0 auto }
  MISC
  -------------------------------------------------------*/
 .hideDiv { display:none; }
+
+/*-------------------------------------------------------
+ Search Block
+ -------------------------------------------------------*/
+ 
+div.search {width:200px; background-color:#f4f4f4;border:1px solid #999; margin:0 10px 15px 0; padding:0;float:left;}
+div.search label {font-weight:bold; margin-bottom:10px;}

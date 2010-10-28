@@ -4,31 +4,11 @@
 ?>
 
 <div class="observations index">
-	<h2><?php __('Observations');?></h2>
+	<h2><?php echo "Observations for ".$employees['User']['name'];?></h2>
 	
 	<!-- <div id="add-doc">Add Document</div> -->
-	<?php echo $this->element('/forms/observationSearch');?>
-	
-	<div class="hideDiv">
-	<?php echo $this->Form->create('Observation', array('action' => 'user'));
-	
-		echo $this->Form->input('id', array('label'=>'Filter by Month', 'options'=>array(
-																				'January'=>'January',
-																				'Feburary'=>'Feburary',
-																				'March'=>'March',
-																				'April'=>'April',
-																				'May'=>'May',
-																				'June'=>'June',
-																				'July'=>'July',
-																				'August'=>'August',
-																				'September'=>'September',
-																				'October'=>'October',
-																				'November'=>'November',
-																				'December'=>'December',
-																				)));
-		echo $this->Form->end(__('Submit', true));?>
- </div>
-	
+		<?php echo $this->element('/forms/observationSearch');?>
+		
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('name');?></th>

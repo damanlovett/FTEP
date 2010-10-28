@@ -18,8 +18,41 @@ class ObservationsController extends AppController {
 		$this->Observation->recursive = 1;
 		$this->set('observations', $this->paginate(array('Observation.archive'=>'0')));
 		}
+		$users = $this->Observation->User->find('list', array('conditions'=>array('User.group_id >'=>3),'order'=>array('User.name ASC')));
+		$this->set(compact('users'));
 	}
-	
+			
+	function month($id=null) {
+		if($this->Auth->user('group_id') > 3 ) {
+		$this->redirect(array('action' => 'trainee'));
+		} else {
+		$this->Observation->recursive = 1;
+		//$this->set('observations', $this->paginate(array('Observation.month'=>$id)));
+		$this->set('observations', $this->paginate(array('Observation.month'=>$this->data['Observation']['id'])));
+				
+		}
+		$users = $this->Observation->User->find('list', array('conditions'=>array('User.group_id >'=>3),'order'=>array('User.name ASC')));
+		$this->set(compact('users'));
+
+
+	}
+			
+	function user($id=null) {
+		if($this->Auth->user('group_id') > 3 ) {
+		$this->redirect(array('action' => 'trainee'));
+		} else {
+		$this->Observation->recursive = 1;
+		//$this->set('observations', $this->paginate(array('Observation.month'=>$id)));
+		$this->set('observations', $this->paginate(array('Observation.employee_id'=>$this->data['Observation']['user'])));
+
+		}
+		$users = $this->Observation->User->find('list', array('conditions'=>array('User.group_id >'=>3),'order'=>array('User.name ASC')));
+		$employees = $this->Observation->User->find('first', array('conditions'=>array('User.id'=>$this->data['Observation']['user'])));
+		$this->set(compact('users','employees'));
+
+	}
+
+
 	function archive() {
 		if($this->Auth->user('group_id') > 3 ) {
 		$this->redirect(array('action' => 'trainee'));
