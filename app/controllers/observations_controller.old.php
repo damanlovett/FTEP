@@ -9,6 +9,11 @@ class ObservationsController extends AppController {
 		$this->set('content_title',"<span class='ss_sprite ss_page_edit'></span>&nbsp;&nbsp;Daily Observation Report Test File");
 		
 	}
+	
+	function indexTester() {
+		$this->Obseration->recursive = 0;
+		$this->set('observations', $this->paginate(array('Observation.user_id'=>$this->Auth->user('id'))));
+	}
 		
 	function index() {
 		$this->Observation->recursive = 0;
