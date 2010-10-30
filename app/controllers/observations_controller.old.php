@@ -6,7 +6,7 @@ class ObservationsController extends AppController {
 	function beforeFilter()
 	{
 		parent::beforeFilter();
-		$this->set('content_title',"<span class='ss_sprite ss_page_edit'></span>&nbsp;&nbsp;Daily Observation Report");
+		$this->set('content_title',"<span class='ss_sprite ss_page_edit'></span>&nbsp;&nbsp;Daily Observation Report Test File");
 		
 	}
 		
