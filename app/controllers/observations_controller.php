@@ -149,13 +149,14 @@ FROM Users INNER JOIN ((employees INNER JOIN Observations ON employees.id = Obse
 			$this->Observation->create();
 			if ($this->Observation->save($this->data)) {
 				$this->Session->setFlash(__('The observation has been saved', true));
-				$this->redirect(array('controller'=>'documentations', 'action' => 'add'));
+				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The observation could not be saved. Please, try again.', true));
 			}
 		}
 		$users = $this->Observation->User->find('list');
-		$employees = $this->Observation->Employee->find('list',array('conditions'=>array('group_id > '=>'4')));
+		
+		$employees = $this->Observation->Employee->find('list',array('conditions'=>array('Employee.group_id > '=>'4'), 'order'=>array('Employee.name ASC')));
 		$this->set(compact('users', 'employees'));
 	}
 

@@ -5,7 +5,7 @@
   $this->set('title_for_layout', 'Daily Observation Report');
 ?>
 <div class="observations form">
-	<h2><?php __('New Observation: '); ?><span>STEP 1 OF 2</span></h2>
+	<h2><?php __('New Observation: '); ?></h2>
 <?php echo $this->Form->create('Observation');?>
 	<fieldset>
 		<legend></legend>
@@ -509,7 +509,47 @@ G) Lifts inappropriately or places partner in danger of injury. (Body   mechanic
 		
 		echo "</div>";
 		
-		echo $this->Form->input('comments', array('column'=>'10', 'rows'=>'5'));
+		// New Document Section
+		
+
+		echo "<div class=''>
+		Documentation of areas that scored 1 or 7. Please note the Objective #, score and reason for score.
+		</div>";
+		
+		echo $this->Form->input('doc_area', array('label'=>''));
+		
+		echo "<div class=''>
+		The most satisfactory area of performance during this evaluation period. Please note the Objective #, and explain why this area was the most satisfactory: 
+		</div>";
+		
+		echo $this->Form->input('most_satisfactory', array('label'=>''));
+		
+		echo "<div class=''>
+		The least satisfactory area of performance during this evaluation period. Please note the Objective #,and explain why this area was the least satisfactory:
+		</div>";
+		
+		echo $this->Form->input('least_satisfactory', array('label'=>''));
+		
+		echo "<div class=''>
+		Field Trainer Comments: 
+		</div>";
+		
+		echo $this->Form->input('comments', array('label'=>'', 'column'=>'10', 'rows'=>'5'));
+		
+		echo "<div class=''>
+		Employee Comments: 
+		</div>";
+		
+		echo $this->Form->input('e_comments', array('label'=>''));
+		
+		
+		
+		// End of New Document Section
+		
+		
+		
+		
+		
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>

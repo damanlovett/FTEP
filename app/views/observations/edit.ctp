@@ -4,7 +4,7 @@
 ?>
 <div class="observations form">
 	<h2><?php __('Edit Observation'); ?></h2>
-<?php echo $this->Form->create('Observation');?>
+<?php echo $this->Form->create('Observation', array('action'=>'edit'));?>
 
 	<?php echo $this->Form->input('archive'); ?>
 
@@ -389,6 +389,50 @@
 																		'6'=>'6',
 																		'7'=>'7 - Superior',
 																		'8'=>'N.O.')));
+																		
+																		
+		// New Document Section
+		
+
+		echo "<div>
+		Documentation of areas that scored 1 or 7. Please note the Objective #, score and reason for score.
+		</div>";
+		
+		echo $this->Form->textarea('doc_area', array('label'=>'', 'column'=>'10', 'rows'=>'5'));
+		
+		echo "<div>
+		 The most satisfactory area of performance during this evaluation period. Please note the Objective #, and explain why this area was the most satisfactory: 
+		</div>";
+		
+		echo $this->Form->textarea('most_satisfactory', array('label'=>'', 'column'=>'10', 'rows'=>'5'));
+		
+		echo "<div>
+		 The least satisfactory area of performance during this evaluation period. Please note the Objective #,and explain why this area was the least satisfactory: 
+		</div>";
+		
+		echo $this->Form->input('least_satisfactory');
+		
+		echo "<div>
+		Field Trainer Comments: 
+		</div>";
+		
+		echo $this->Form->textarea('comments', array('label'=>'', 'column'=>'10', 'rows'=>'5'));
+		
+		echo "<div>
+		Employee Comments: 
+		</div>";
+		
+		echo $this->Form->textarea('e_comments', array('label'=>'', 'column'=>'10', 'rows'=>'5'));
+		
+		
+		
+		// End of New Document Section
+																		
+																		
+																		
+																		
+																		
+																		
 		
 		echo "</div>";
 	?>

@@ -258,11 +258,52 @@
 			<?php echo $observation['Observation']['33']; ?>
 			&nbsp;
 		</dd>
-		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Comments'); ?></dt>
+		
+		
+		<!-- New Document Section -->
+	<div class="newDoc">	
+		
+		
+				<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Document Area'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $observation['Observation']['doc_area']; ?>
+			&nbsp;
+		</dd>
+
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Most Satisfactory'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $observation['Observation']['most_satisfactory']; ?>
+			&nbsp;
+		</dd>
+
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Least Satisfactory'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $observation['Observation']['least_satisfactory']; ?>
+			&nbsp;
+		</dd>
+
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Employee Comments'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $observation['Observation']['e_Comments']; ?>
+			&nbsp;
+		</dd>
+
+
+		<!-- End of New Document Section -->
+		
+		
+		
+		
+		
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Observer Comments'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['comments']; ?>
 			&nbsp;
 		</dd>
+		
+		
+		</div>	
+	
 		</div>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Created'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
@@ -286,7 +327,13 @@
 		<li><?php echo $this->Html->link(__('List Plans', true), array('controller' => 'plans', 'action' => 'index')); ?> </li>
 	</ul>
 </div>
-<div class="related">
+
+<!-- Hiding Divs to be deleted later -->
+<div class="hideDiv">
+	
+	
+	
+<div class="related hideDiv">
 	<h3><?php __('Related Comments');?></h3>
 	<?php if (!empty($observation['Comment'])):?>
 	<table cellpadding = "0" cellspacing = "0">
@@ -323,7 +370,7 @@
 <?php endif; ?>
 
 </div>
-<div class="related">
+<div class="related hideDiv">
 	<h3><?php __('Related Documentations');?></h3>
 	<?php if (!empty($observation['Documentation'])):?>
 	<table cellpadding = "0" cellspacing = "0">
@@ -354,7 +401,8 @@
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
-
+</div>
+<!-- End of Hide Div -->
 	
 </div>
 <div class="related">
