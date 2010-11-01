@@ -8,7 +8,10 @@ class ObservationsController extends AppController {
 		$this->layout = 'default';
 		$this->Observation->recursive = 0;
 		$this->set('observations', $this->paginate());
+		
 	}
+
+// Comment to test git on laptop
 
 	function export()
 	{	
