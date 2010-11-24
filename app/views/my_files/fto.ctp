@@ -1,11 +1,11 @@
 <?php $this->set("content_title","<span class='ss_sprite
 ss_layout'>&nbsp;&nbsp;Document Library</span>");?>
 <div class="myFiles index">
-<h2><?php __('Documents');?></h2>
+<h2><?php __('FTO Documents');?></h2>
 <fieldset>
 <?php
 echo $paginator->counter(array(
-'format' => __('Showing %current% document(s) out of %count%.', true)
+'format' => __('Showing '.$total.' FTO document(s) out of %count% total documents.', true)
 ));
     ?> 
 </fieldset>
@@ -25,7 +25,7 @@ foreach ($myFiles as $myFile):
 		$class = ' class="altrow"';
 	}
 ?>
-<?php if ($myFile['MyFile']['fto'] <> 1): ?>
+<?php if ($myFile['MyFile']['fto'] == 1): ?>
 
 	<tr<?php echo $class;?>>
 		<td>

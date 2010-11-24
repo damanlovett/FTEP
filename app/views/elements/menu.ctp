@@ -1,7 +1,7 @@
 <?php if ($session->read('Auth.User.group_id') == 1):?>
 <div id="#navAdmin">
 	<ul id="menu">
-		<li>Super Admin:</li>
+		<li>s:</li>
 		<li><?php echo $html->link(__('My Account', true), array('controller'=>'employees', 'action'=>'my_view')); ?></li>
 		<li><?php echo $html->link(__('Announcements', true), array('controller'=>'announcements', 'action'=>'index')); ?></li>
 		<li><?php echo $html->link(__('Observation', true), array('controller'=>'observations', 'action'=>'index')); ?></li>
@@ -11,7 +11,7 @@
 		<li><?php echo $html->link(__('Comments', true), array('controller'=>'comments', 'action'=>'index')); ?></li>
 		<li><?php echo $html->link(__('users', true), array('controller'=>'users', 'action'=>'index')); ?></li>
 		<li><?php echo $html->link(__('Document Library', true), array('controller'=>'my_files', 'action'=>'index')); ?></li>
-		<li><?php echo $session->read('Auth.User.group_id'); ?></li>
+		<li><?php echo $html->link(__('FTO Docs', true), array('controller'=>'my_files', 'action'=>'fto')); ?></li>
 	</ul>
 </div>
 <?php elseif ($session->read('Auth.User.group_id') == 2):?>
@@ -27,6 +27,7 @@
 		<li><?php echo $html->link(__('Comments', true), array('controller'=>'comments', 'action'=>'index')); ?></li>
 		<li><?php echo $html->link(__('users', true), array('controller'=>'users', 'action'=>'index')); ?></li>
 		<li><?php echo $html->link(__('Document Library', true), array('controller'=>'my_files', 'action'=>'index')); ?></li>
+		<li><?php echo $html->link(__('FTO Docs', true), array('controller'=>'my_files', 'action'=>'fto')); ?></li>
 	</ul>
 </div>
 <?php elseif ($session->read('Auth.User.group_id') == 3):?>
@@ -41,6 +42,7 @@
 		<li><?php echo $html->link(__('Lesson Plans', true), array('controller'=>'plans', 'action'=>'index')); ?></li>
 		<li><?php echo $html->link(__('Comments', true), array('controller'=>'comments', 'action'=>'index')); ?></li>
 		<li><?php echo $html->link(__('Document Library', true), array('controller'=>'my_files', 'action'=>'index')); ?></li>
+		<li><?php echo $html->link(__('FTO Docs', true), array('controller'=>'my_files', 'action'=>'fto')); ?></li>
 	</ul>
 </div>
 <?php elseif ($session->read('Auth.User.group_id') == 4):?>

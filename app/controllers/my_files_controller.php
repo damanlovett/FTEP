@@ -16,6 +16,20 @@ class MyFilesController extends AppController {
 		$count = $this->MyFile->find('count', array('conditions' => array('MyFile.user_id'=>$this->Auth->user('id'))));
 		$this->set('total', $count);
 	}
+          
+    function fto() {
+    	if($this->Auth->user('group_id') > 3 ) {
+    		
+		$this->redirect(array('controller'=>'my_files', 'action' => 'index'));
+    		
+		} else {
+
+		$this->MyFile->recursive = 0;
+		$this->set('myFiles', $this->paginate());
+		$count = $this->MyFile->find('count', array('conditions' => array('MyFile.fto'=>1)));
+		$this->set('total', $count);
+	}
+}
 
 	function view($id = null) {
 		if (!$id) {
