@@ -14,6 +14,13 @@ class AnnouncementsController extends AppController {
 		$this->set('announcements', $this->paginate());
 	}
 	
+	function calendar() {
+				$this->Announcement->recursive = 0;
+		$this->set('announcements', $this->paginate());
+
+		
+	}
+	
 	function my_list() {
 		$this->Announcement->recursive = 0;
 		$this->set('announcements', $this->paginate());
