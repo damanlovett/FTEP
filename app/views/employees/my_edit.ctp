@@ -19,15 +19,8 @@
 </div>
 
 <div class="actions">
-<div id="profileInfo">
-	<h3>Profile Information</h3>
-	<ul>
-		<li><strong><?php echo $session->read('Auth.User.name') ;?></strong></li>
-		<li><?php echo $switches->accessLevel($session->read('Auth.User.admin')) ?>
-		<li><?php echo $switches->groupLevel($session->read('Auth.User.group_id')) ;?></li>
-		<li><?php echo $session->read('Auth.User.username') ;?></li>
-	</ul>
-	</div>
+
+	<?php echo $this->element('profileInfo'); ?>
 
 	<h3><?php __('Actions'); ?></h3>
 	<ul>
