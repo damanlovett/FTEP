@@ -43,15 +43,9 @@
 		<li><?php echo $this->Html->link(__('New User', true), array('controller' => 'users', 'action' => 'add')); ?> </li>
 	</ul>
 	-->
-	<div id="profileInfo">
-	<h3>Profile Information</h3>
-	<ul>
-		<li><strong><?php echo $session->read('Auth.User.name') ;?></strong></li>
-		<li><?php echo $switches->accessLevel($session->read('Auth.User.admin')) ?>
-		<li><?php echo $switches->groupLevel($session->read('Auth.User.group_id')) ;?></li>
-		<li><?php echo $session->read('Auth.User.username') ;?></li>
-	</ul>
-	</div>
+
+	<?php echo $this->element('profileInfo');?>
+
 	<?php if ( $session->read('Auth.User.group_id') < 3 ) {
 				
 				echo $this->element('admin/menuAnnouncements');
