@@ -21,6 +21,24 @@ class ObservationsController extends AppController {
 		$users = $this->Observation->User->find('list', array('conditions'=>array('User.group_id >'=>3),'order'=>array('User.name ASC')));
 		$this->set(compact('users'));
 	}
+		
+	function export_xls($id=null) {
+		$this->data['Observation']['month'] = 'January';
+		if($this->Auth->user('group_id') > 3 ) {
+		$this->redirect(array('action' => 'trainee'));
+		} else {
+		$this->Observation->recursive = 1;
+		$data = $this->Observation->find('all', array('conditions'=>array('Observation.month'=>$this->data['Observation']['month'])));
+		
+		$this->set('rows',$data);
+		$this->render('export_xls','export_xls');
+		}
+		$users = $this->Observation->User->find('list', array('conditions'=>array('User.group_id >'=>3),'order'=>array('User.name ASC')));
+		$this->set(compact('users'));
+	}
+	
+	
+	
 			
 	function month($id=null) {
 		if($this->Auth->user('group_id') > 3 ) {
