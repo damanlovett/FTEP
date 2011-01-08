@@ -23,7 +23,7 @@ class ObservationsController extends AppController {
 	}
 		
 	function export_xls($id=null) {
-		$this->data['Observation']['month'] = 'January';
+		//$this->data['Observation']['month'] = 'January';
 		if($this->Auth->user('group_id') > 3 ) {
 		$this->redirect(array('action' => 'trainee'));
 		} else {
