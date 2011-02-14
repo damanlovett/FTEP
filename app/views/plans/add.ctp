@@ -3,7 +3,6 @@
   $this->set('title_for_layout', 'Daily Observation Report');
   $this->set("content_title", "<span class='ss_sprite ss_book_edit'></span>&nbsp;&nbsp;Lesson Plan Manager");  
 ?>
-
 <div class="plans form">
 	<h2><?php __('New Plan'); ?></h2>
 <?php echo $this->Form->create('Plan');?>
@@ -12,6 +11,7 @@
 	<?php
 		echo $this->Form->input('observation_id');
 		echo $this->Form->hidden('user_id', array('value'=>$session->read('Auth.User.id')));
+      echo $this->Form->input('due');
 		echo $this->Form->input('comments');
 	?>
 	</fieldset>

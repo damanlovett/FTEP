@@ -36,6 +36,24 @@ class PlansController extends AppController {
 		$this->set(compact('observations', 'users'));
 	}
 
+
+	function linked() {
+		if (!empty($this->data)) {
+			$this->Plan->create();
+			if ($this->Plan->save($this->data)) {
+				$this->Session->setFlash(__('The plan has been saved', true));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The plan could not be saved. Please, try again.', true));
+			}
+		}
+		$observations = $this->Plan->Observation->find('list', array('conditions'=> array('Observation.user_id'=>$this->Auth->user('id'))));
+		$users = $this->Plan->User->find('list');
+		$this->set(compact('observations', 'users'));
+	}
+
+
+
 	function edit($id = null) {
 		if (!$id && empty($this->data)) {
 			$this->Session->setFlash(__('Invalid plan', true));

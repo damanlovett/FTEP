@@ -1,10 +1,15 @@
 <?php 
   $this->set('body_attr', array('class' => 'add_observation'));
   $this->set('title_for_layout', 'Daily Observation Report');
-?>
+  ;?>
 
 <div class="observations view">
 <h2><?php echo $time->format( 'l F d, Y', $observation['Observation']['date_of'])." - ".$observation['Employee']['name']; ?></h2>
+<span style="margin-bottom:5px;" class="actions">
+<?php echo $this->Html->link('Link New Lesson Plan', array('controller'=>'plans', 'action'=>'linked', $observation['Observation']['id']));?>
+</span>
+<br />
+<br />
 	<dl><?php $i = 0; $class = ' class="altrow"';?>
 				<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Observer'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
@@ -133,7 +138,7 @@
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
 			<?php echo $observation['Observation']['9p']; ?>
 			&DELETE;
-		</dd>>
+		</dd>
 		
 </div>		
 		
@@ -321,7 +326,7 @@
 	<h3><?php __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Observation', true), array('action' => 'edit', $observation['Observation']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('Delete Observation', true), array('action' => 'delete', $observation['Observation']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $observation['Observation']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Delete Observation', true), array('action' => 'delete', $observation['Observation']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $observation['Observation']['name'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Observations', true), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Comments', true), array('controller' => 'comments', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Plans', true), array('controller' => 'plans', 'action' => 'index')); ?> </li>
@@ -395,7 +400,7 @@
 			<td class="actions">
 				<?php echo $this->Html->link(__('View', true), array('controller' => 'documentations', 'action' => 'view', $documentation['id'])); ?>
 				<?php echo $this->Html->link(__('Edit', true), array('controller' => 'documentations', 'action' => 'edit', $documentation['id'])); ?>
-				<?php echo $this->Html->link(__('Delete', true), array('controller' => 'documentations', 'action' => 'delete', $documentation['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $documentation['id'])); ?>
+				<?php echo $this->Html->link(__('Delete', true), array('controller' => 'documentations', 'action' => 'delete', $documentation['id']), null, sprintf(__('Are you sure you want to delete this documentation?', true), $documentation['name'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
